@@ -26,10 +26,17 @@ jobs:
 
       - name: Run bots
         env:
-          HEADLESS: true
-          WAIT_SECONDS: 10
-          # Add proxies as GitHub Secrets later
-          # PROXY_1: ${{ secrets.PROXY_1 }}
-          # PROXY_2: ${{ secrets.PROXY_2 }}
+         HEADLESS: true
+         WAIT_SECONDS: 10
+         PROXY_1: ${{ secrets.PROXY_1 }}
+         PROXY_2: ${{ secrets.PROXY_2 }}
+         PROXY_3: ${{ secrets.PROXY_3 }}
+         PROXY_4: ${{ secrets.PROXY_4 }}
+         PROXY_5: ${{ secrets.PROXY_5 }}
+         PROXY_6: ${{ secrets.PROXY_6 }}
+         PROXY_7: ${{ secrets.PROXY_7 }}
+         PROXY_8: ${{ secrets.PROXY_8 }}
+         PROXY_9: ${{ secrets.PROXY_9 }}
+         PROXY_10: ${{ secrets.PROXY_10 }}
         run: |
-          python main.py --bots 5
+          python main.py --bots 10
